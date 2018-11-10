@@ -14,7 +14,7 @@ while True:
             print("You guessed 1 time!\n")
         else:
             print("And it only took you {} tries!".format(guesnum))
-
+        break
     guess = input("Guess the number!\n")
 
     if str(guess) == "":
