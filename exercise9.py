@@ -11,12 +11,11 @@ while True:
 
     def exit():
         if guesnum == 1:
-            print("You guessed 1 time!\n")
+            print("And it only took you 1 try!\n")
         else:
             print("And it only took you {} tries!".format(guesnum))
-        break
-    guess = input("Guess the number!\n")
 
+    guess = input("Guess the number!\n")
     if str(guess) == "":
         continue
     elif str(guess) == "exit":
@@ -25,6 +24,7 @@ while True:
         print("You guessed correct!")
         guesnum = guesnum + 1
         exit()
+        break
     elif int(guess) > a:
         print("You guessed too high!\n")
         guesnum = guesnum + 1
